@@ -1,0 +1,759 @@
+Key,Value
+CellProfiler_Version,4.1.3
+ChannelType_DAPI,Color
+ChannelType_Green,Color
+ChannelType_OrigTUJ,Grayscale
+ChannelType_Red,Color
+ImageSet_Zip_Dictionary,b'eG1sMS4wIj9PTUU6L3d3b3BzYy9TbS9PTUUyMC02SW1hZ2UgUmVkPjxQaXhlbHMgbWVuT3JUIiBJRD0iUmVkIiBTaXplQz0iMSIgU2l6ZVQ9IjEiIFNpemVYPSIxIiBTaXplWT0iMSI+PFRpZmZEYXRhIEZpcnN0Qz0iMCIgRmlyc3RUPSIwIiBGaXJzdFo9IjAiIElGRD0iMCIgUGxhbmVDb3VudD0iMSI+PFVVSUQgRmlsZU5hbWU9ImZpbGU6L1VzZXJzL25pay9Eb2N1bWVudHMvR2l0aHViL1JOQXNjb3BlL2ltYWdlcy9STkFzY29wZV8xMTEzMjBfZDMwcjFfdHVqaGVzX0wyX2NoMGVuR3JlZW4iLnRpZiIvPjwvVGlmZkRhdGE+PFBsYW5lIFRoZUM9IjAiIFRoZVQ9IjAiIFRoZVo9IjAiPjxBbm5vdGF0aW9uUmVmIElEPSJpbmZvOi8vY2VsbHByb2ZpbGVyLm9yZy9pbWFnZXNldC9hbm5vdGF0aW9uLzIwMTQtMDQtMTcvQ2hhbm5lbC8tMiIvPjwvUGxhbmU+PC9QaXhlbHM+PC9JbWFnZT48SW1hZ2UgSUQ9IkFQSSI+PFBpeGVscyBEaW1lbnNpb25PcmRlcj0iWFlDWlQiIElEPSJQaXhlbHM6REFQSSIgU2l6ZUM9IjEiIFNpemVYPSIxIlNZPSIxIj48VGlmZkRhdGEgRmlyc3RDPSIwIiBGaXJzdFQ9IjAiIFo9IjAiRkQ9ImFubnQ9IjFVSUQgRmlOYW1lPSJmaWxlOnNlcnNzL0d1L1JOQXNjb3BlL2ltYWdlc1JOc2NvcF8xMTN0dUxjaHRpZj48aWF0UGxhbmUgVGhlQz0iMCIgVGhlVD0iMCJaPSIwIj48QW5ub3RhdGlvbmYgSWlubzovL2Nyb2VyLmdpbWF0bm5vdGF0aW9uLzIwMTQtMENoYW5uZWwvLTIiLz48L2U+PC9QaXhlbHM+PC9JbWFnZT48cmlPcmlnVFVKIiBTaXplVD0iMSIgU2l6ZVg9IjEiIFNpemVZPSIxIj48VGlmZkRhdGEgRmlyc3RDPSIwIiBGaXJzdFQ9IjAiIEZpcnN0Wj0iMCIgSUZEPSIwIiBQbGFuZUNvdW50PSIxIj48VVVJRCBGaWxlTmFtZT0iZmlsZTovVXNlcnMvbmlrL0RvY3VtZW50cy9HaXRodWIvUk5Bc2NvcGUvaW1hZ2VzL1JOQXNjb3BlXzExMTMyMF9kMzByMV90dWpoZXNfTDJfY2gwPjwvUHhzPjwvcmVuc0xvbmdBbm5vdGF0aW9uY3Jhbm5EZXNjcmlwdGlvbj5WYWx1ZT48dGlvbj48U3RydWN0dXJlZEFubm90YXRpb25zPjxP'
+Metadata_Tags,"[""ImageNumber""]"
+Pipeline_Pipeline,"CellProfiler Pipeline: http://www.cellprofiler.org
+Version:5
+DateRevision:413
+GitHash:
+ModuleCount:32
+HasImagePlaneDetails:False
+
+Images:[module_num:1|svn_version:'Unknown'|variable_revision_number:2|show_window:True|notes:['To begin creating your project, use the Images module to compile a list of files and/or folders that you want to analyze. You can also specify a set of rules to include only the desired files in your selected folders.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    :
+    Filter images?:Images only
+    Select the rule criteria:and (extension does isimage) (directory doesnot containregexp ""[\\\\/]\\."")
+
+Metadata:[module_num:2|svn_version:'Unknown'|variable_revision_number:6|show_window:True|notes:['The Metadata module optionally allows you to extract information describing your images (i.e, metadata) which will be stored along with your measurements. This information can be contained in the file name and/or location, or in an external file.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Extract metadata?:No
+    Metadata data type:Text
+    Metadata types:{}
+    Extraction method count:1
+    Metadata extraction method:Extract from file/folder names
+    Metadata source:File name
+    Regular expression to extract from file name:^(?P<Plate>.*)_(?P<Well>[A-P][0-9]{2})_s(?P<Site>[0-9])_w(?P<ChannelNumber>[0-9])
+    Regular expression to extract from folder name:(?P<Date>[0-9]{4}_[0-9]{2}_[0-9]{2})$
+    Extract metadata from:All images
+    Select the filtering criteria:and (file does contain """")
+    Metadata file location:Elsewhere...|
+    Match file and image metadata:[]
+    Use case insensitive matching?:No
+    Metadata file name:None
+    Does cached metadata exist?:No
+
+NamesAndTypes:[module_num:3|svn_version:'Unknown'|variable_revision_number:8|show_window:True|notes:['The NamesAndTypes module allows you to assign a meaningful name to each image by which other modules will refer to it.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Assign a name to:Images matching rules
+    Select the image type:Color image
+    Name to assign these images:rawdata
+    Match metadata:[]
+    Image set matching method:Order
+    Set intensity range from:Image metadata
+    Assignments count:4
+    Single images count:0
+    Maximum intensity:255.0
+    Process as 3D?:No
+    Relative pixel spacing in X:1.0
+    Relative pixel spacing in Y:1.0
+    Relative pixel spacing in Z:1.0
+    Select the rule criteria:and (file does contain ""ch01"")
+    Name to assign these images:Red
+    Name to assign these objects:Cell
+    Select the image type:Color image
+    Set intensity range from:Image metadata
+    Maximum intensity:255.0
+    Select the rule criteria:and (file does contain ""ch02"")
+    Name to assign these images:Green
+    Name to assign these objects:Nucleus
+    Select the image type:Color image
+    Set intensity range from:Image metadata
+    Maximum intensity:255.0
+    Select the rule criteria:and (file does contain ""ch03"")
+    Name to assign these images:DAPI
+    Name to assign these objects:Cytoplasm
+    Select the image type:Color image
+    Set intensity range from:Image metadata
+    Maximum intensity:255.0
+    Select the rule criteria:and (file does contain ""ch00"")
+    Name to assign these images:OrigTUJ
+    Name to assign these objects:Speckle
+    Select the image type:Grayscale image
+    Set intensity range from:Image metadata
+    Maximum intensity:255.0
+
+Groups:[module_num:4|svn_version:'Unknown'|variable_revision_number:2|show_window:True|notes:['The Groups module optionally allows you to split your list of images into image subsets (groups) which will be processed independently of each other. Examples of groupings include screening batches, microtiter plates, time-lapse movies, etc.']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Do you want to group your images?:No
+    grouping metadata count:1
+    Metadata category:None
+
+ColorToGray:[module_num:5|svn_version:'Unknown'|variable_revision_number:4|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:DAPI
+    Conversion method:Split
+    Image type:RGB
+    Name the output image:OrigGray
+    Relative weight of the red channel:1.0
+    Relative weight of the green channel:1.0
+    Relative weight of the blue channel:1.0
+    Convert red to gray?:No
+    Name the output image:OrigRed
+    Convert green to gray?:No
+    Name the output image:OrigGreen
+    Convert blue to gray?:Yes
+    Name the output image:OrigDAPI
+    Convert hue to gray?:Yes
+    Name the output image:OrigHue
+    Convert saturation to gray?:Yes
+    Name the output image:OrigSaturation
+    Convert value to gray?:Yes
+    Name the output image:OrigValue
+    Channel count:1
+    Channel number:1
+    Relative weight of the channel:1.0
+    Image name:Channel1
+
+ColorToGray:[module_num:6|svn_version:'Unknown'|variable_revision_number:4|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:Red
+    Conversion method:Split
+    Image type:RGB
+    Name the output image:OrigGray
+    Relative weight of the red channel:1.0
+    Relative weight of the green channel:1.0
+    Relative weight of the blue channel:1.0
+    Convert red to gray?:Yes
+    Name the output image:OrigRed
+    Convert green to gray?:No
+    Name the output image:OrigGreen
+    Convert blue to gray?:No
+    Name the output image:OrigRed
+    Convert hue to gray?:Yes
+    Name the output image:OrigHue
+    Convert saturation to gray?:Yes
+    Name the output image:OrigSaturation
+    Convert value to gray?:Yes
+    Name the output image:OrigValue
+    Channel count:1
+    Channel number:1
+    Relative weight of the channel:1.0
+    Image name:Channel1
+
+ColorToGray:[module_num:7|svn_version:'Unknown'|variable_revision_number:4|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:Green
+    Conversion method:Split
+    Image type:RGB
+    Name the output image:OrigGray
+    Relative weight of the red channel:1.0
+    Relative weight of the green channel:1.0
+    Relative weight of the blue channel:1.0
+    Convert red to gray?:No
+    Name the output image:OrigRed
+    Convert green to gray?:Yes
+    Name the output image:OrigGreen
+    Convert blue to gray?:No
+    Name the output image:OrigGreen
+    Convert hue to gray?:Yes
+    Name the output image:OrigHue
+    Convert saturation to gray?:Yes
+    Name the output image:OrigSaturation
+    Convert value to gray?:Yes
+    Name the output image:OrigValue
+    Channel count:1
+    Channel number:1
+    Relative weight of the channel:1.0
+    Image name:Channel1
+
+IdentifyPrimaryObjects:[module_num:8|svn_version:'Unknown'|variable_revision_number:14|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:OrigDAPI
+    Name the primary objects to be identified:Nuclei
+    Typical diameter of objects, in pixel units (Min,Max):10,4000
+    Discard objects outside the diameter range?:Yes
+    Discard objects touching the border of the image?:No
+    Method to distinguish clumped objects:Intensity
+    Method to draw dividing lines between clumped objects:Intensity
+    Size of smoothing filter:10
+    Suppress local maxima that are closer than this minimum allowed distance:7.0
+    Speed up by using lower-resolution image to find local maxima?:Yes
+    Fill holes in identified objects?:After both thresholding and declumping
+    Automatically calculate size of smoothing filter for declumping?:Yes
+    Automatically calculate minimum allowed distance between local maxima?:Yes
+    Handling of objects if excessive number of objects identified:Continue
+    Maximum number of objects:500
+    Display accepted local maxima?:No
+    Select maxima color:Blue
+    Use advanced settings?:No
+    Threshold setting version:12
+    Threshold strategy:Global
+    Thresholding method:Minimum Cross-Entropy
+    Threshold smoothing scale:1.3488
+    Threshold correction factor:1.0
+    Lower and upper bounds on threshold:0.0,1.0
+    Manual threshold:0.0
+    Select the measurement to threshold with:None
+    Two-class or three-class thresholding?:Two classes
+    Log transform before thresholding?:No
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Size of adaptive window:50
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2.0
+    Thresholding method:Minimum Cross-Entropy
+
+EnhanceOrSuppressFeatures:[module_num:9|svn_version:'Unknown'|variable_revision_number:7|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:OrigRed
+    Name the output image:FilteredRNA_Red
+    Select the operation:Enhance
+    Feature size:20
+    Feature type:Speckles
+    Range of hole sizes:1,10
+    Smoothing scale:2.0
+    Shear angle:0.0
+    Decay:0.95
+    Enhancement method:Tubeness
+    Speed and accuracy:Slow
+    Rescale result image:No
+
+EnhanceOrSuppressFeatures:[module_num:10|svn_version:'Unknown'|variable_revision_number:7|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:OrigGreen
+    Name the output image:FilteredRNA_Green
+    Select the operation:Enhance
+    Feature size:20
+    Feature type:Speckles
+    Range of hole sizes:1,10
+    Smoothing scale:2.0
+    Shear angle:0.0
+    Decay:0.95
+    Enhancement method:Tubeness
+    Speed and accuracy:Slow
+    Rescale result image:No
+
+EnhanceOrSuppressFeatures:[module_num:11|svn_version:'Unknown'|variable_revision_number:7|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:OrigTUJ
+    Name the output image:FilteredRNA_TUJ
+    Select the operation:Enhance
+    Feature size:20
+    Feature type:Speckles
+    Range of hole sizes:1,10
+    Smoothing scale:2.0
+    Shear angle:0.0
+    Decay:0.95
+    Enhancement method:Tubeness
+    Speed and accuracy:Slow
+    Rescale result image:No
+
+Threshold:[module_num:12|svn_version:'Unknown'|variable_revision_number:12|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:False|wants_pause:False]
+    Select the input image:FilteredRNA_Red
+    Name the output image:RedThreshold
+    Threshold strategy:Global
+    Thresholding method:Manual
+    Threshold smoothing scale:1.3488
+    Threshold correction factor:1.0
+    Lower and upper bounds on threshold:0.0,1.0
+    Manual threshold:0.2
+    Select the measurement to threshold with:None
+    Two-class or three-class thresholding?:Two classes
+    Log transform before thresholding?:No
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Size of adaptive window:50
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2.0
+    Thresholding method:Minimum Cross-Entropy
+
+Threshold:[module_num:13|svn_version:'Unknown'|variable_revision_number:12|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:False|wants_pause:False]
+    Select the input image:FilteredRNA_Green
+    Name the output image:GreenThreshold
+    Threshold strategy:Global
+    Thresholding method:Manual
+    Threshold smoothing scale:1.3488
+    Threshold correction factor:1.0
+    Lower and upper bounds on threshold:0.0,1.0
+    Manual threshold:0.09
+    Select the measurement to threshold with:None
+    Two-class or three-class thresholding?:Two classes
+    Log transform before thresholding?:No
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Size of adaptive window:50
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2.0
+    Thresholding method:Minimum Cross-Entropy
+
+Threshold:[module_num:14|svn_version:'Unknown'|variable_revision_number:12|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:False|wants_pause:False]
+    Select the input image:FilteredRNA_TUJ
+    Name the output image:TUJThreshold
+    Threshold strategy:Global
+    Thresholding method:Manual
+    Threshold smoothing scale:1.3488
+    Threshold correction factor:1.0
+    Lower and upper bounds on threshold:0.0,1.0
+    Manual threshold:0.2
+    Select the measurement to threshold with:None
+    Two-class or three-class thresholding?:Two classes
+    Log transform before thresholding?:No
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Size of adaptive window:50
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2.0
+    Thresholding method:Minimum Cross-Entropy
+
+IdentifyPrimaryObjects:[module_num:15|svn_version:'Unknown'|variable_revision_number:14|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:FilteredRNA_Red
+    Name the primary objects to be identified:RNA_Red
+    Typical diameter of objects, in pixel units (Min,Max):3,40
+    Discard objects outside the diameter range?:Yes
+    Discard objects touching the border of the image?:No
+    Method to distinguish clumped objects:Intensity
+    Method to draw dividing lines between clumped objects:Intensity
+    Size of smoothing filter:10
+    Suppress local maxima that are closer than this minimum allowed distance:7.0
+    Speed up by using lower-resolution image to find local maxima?:Yes
+    Fill holes in identified objects?:Never
+    Automatically calculate size of smoothing filter for declumping?:Yes
+    Automatically calculate minimum allowed distance between local maxima?:Yes
+    Handling of objects if excessive number of objects identified:Continue
+    Maximum number of objects:500
+    Display accepted local maxima?:No
+    Select maxima color:Blue
+    Use advanced settings?:Yes
+    Threshold setting version:12
+    Threshold strategy:Global
+    Thresholding method:Manual
+    Threshold smoothing scale:1.3488
+    Threshold correction factor:1.0
+    Lower and upper bounds on threshold:0.0,1.0
+    Manual threshold:0.2
+    Select the measurement to threshold with:None
+    Two-class or three-class thresholding?:Two classes
+    Log transform before thresholding?:No
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Size of adaptive window:50
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2.0
+    Thresholding method:Minimum Cross-Entropy
+
+IdentifyPrimaryObjects:[module_num:16|svn_version:'Unknown'|variable_revision_number:14|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:FilteredRNA_Green
+    Name the primary objects to be identified:RNA_Green
+    Typical diameter of objects, in pixel units (Min,Max):3,40
+    Discard objects outside the diameter range?:Yes
+    Discard objects touching the border of the image?:No
+    Method to distinguish clumped objects:Intensity
+    Method to draw dividing lines between clumped objects:Intensity
+    Size of smoothing filter:10
+    Suppress local maxima that are closer than this minimum allowed distance:7.0
+    Speed up by using lower-resolution image to find local maxima?:Yes
+    Fill holes in identified objects?:Never
+    Automatically calculate size of smoothing filter for declumping?:Yes
+    Automatically calculate minimum allowed distance between local maxima?:Yes
+    Handling of objects if excessive number of objects identified:Continue
+    Maximum number of objects:500
+    Display accepted local maxima?:No
+    Select maxima color:Blue
+    Use advanced settings?:Yes
+    Threshold setting version:12
+    Threshold strategy:Global
+    Thresholding method:Manual
+    Threshold smoothing scale:1.3488
+    Threshold correction factor:1.0
+    Lower and upper bounds on threshold:0.0,1.0
+    Manual threshold:0.09
+    Select the measurement to threshold with:None
+    Two-class or three-class thresholding?:Two classes
+    Log transform before thresholding?:No
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Size of adaptive window:50
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2.0
+    Thresholding method:Minimum Cross-Entropy
+
+IdentifyPrimaryObjects:[module_num:17|svn_version:'Unknown'|variable_revision_number:14|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the input image:FilteredRNA_TUJ
+    Name the primary objects to be identified:RNA_TUJ
+    Typical diameter of objects, in pixel units (Min,Max):3,40
+    Discard objects outside the diameter range?:Yes
+    Discard objects touching the border of the image?:No
+    Method to distinguish clumped objects:Intensity
+    Method to draw dividing lines between clumped objects:Intensity
+    Size of smoothing filter:10
+    Suppress local maxima that are closer than this minimum allowed distance:7.0
+    Speed up by using lower-resolution image to find local maxima?:Yes
+    Fill holes in identified objects?:Never
+    Automatically calculate size of smoothing filter for declumping?:Yes
+    Automatically calculate minimum allowed distance between local maxima?:Yes
+    Handling of objects if excessive number of objects identified:Continue
+    Maximum number of objects:500
+    Display accepted local maxima?:No
+    Select maxima color:Blue
+    Use advanced settings?:Yes
+    Threshold setting version:12
+    Threshold strategy:Global
+    Thresholding method:Manual
+    Threshold smoothing scale:1.3488
+    Threshold correction factor:1.0
+    Lower and upper bounds on threshold:0.0,1.0
+    Manual threshold:0.2
+    Select the measurement to threshold with:None
+    Two-class or three-class thresholding?:Two classes
+    Log transform before thresholding?:No
+    Assign pixels in the middle intensity class to the foreground or the background?:Foreground
+    Size of adaptive window:50
+    Lower outlier fraction:0.05
+    Upper outlier fraction:0.05
+    Averaging method:Mean
+    Variance method:Standard deviation
+    # of deviations:2.0
+    Thresholding method:Minimum Cross-Entropy
+
+RelateObjects:[module_num:18|svn_version:'Unknown'|variable_revision_number:5|show_window:True|notes:['Relating colocalization of DAPI to red RNA']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Parent objects:Nuclei
+    Child objects:RNA_Red
+    Calculate child-parent distances?:None
+    Calculate per-parent means for all child measurements?:Yes
+    Calculate distances to other parents?:No
+    Do you want to save the children with parents as a new object set?:Yes
+    Name the output object:RedWithinDAPI
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+
+RelateObjects:[module_num:19|svn_version:'Unknown'|variable_revision_number:5|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Parent objects:Nuclei
+    Child objects:RNA_TUJ
+    Calculate child-parent distances?:None
+    Calculate per-parent means for all child measurements?:Yes
+    Calculate distances to other parents?:No
+    Do you want to save the children with parents as a new object set?:Yes
+    Name the output object:TUJWithinDAPI
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+
+RelateObjects:[module_num:20|svn_version:'Unknown'|variable_revision_number:5|show_window:True|notes:['Relating colocalization of DAPI and green RNA']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Parent objects:Nuclei
+    Child objects:RNA_Green
+    Calculate child-parent distances?:None
+    Calculate per-parent means for all child measurements?:Yes
+    Calculate distances to other parents?:No
+    Do you want to save the children with parents as a new object set?:Yes
+    Name the output object:GreenWithinDAPI
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+
+RelateObjects:[module_num:21|svn_version:'Unknown'|variable_revision_number:5|show_window:True|notes:['colocalization', 'Red to Green ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Parent objects:RedWithinDAPI
+    Child objects:GreenWithinDAPI
+    Calculate child-parent distances?:None
+    Calculate per-parent means for all child measurements?:Yes
+    Calculate distances to other parents?:No
+    Do you want to save the children with parents as a new object set?:Yes
+    Name the output object:RedGreenColocal
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+
+RelateObjects:[module_num:22|svn_version:'Unknown'|variable_revision_number:5|show_window:True|notes:['Colocalization ', 'Red to TUJ']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Parent objects:RedWithinDAPI
+    Child objects:TUJWithinDAPI
+    Calculate child-parent distances?:None
+    Calculate per-parent means for all child measurements?:Yes
+    Calculate distances to other parents?:No
+    Do you want to save the children with parents as a new object set?:Yes
+    Name the output object:RedTUJColocal
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+
+RelateObjects:[module_num:23|svn_version:'Unknown'|variable_revision_number:5|show_window:True|notes:['colocalization ', 'TUJ to Green']|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Parent objects:GreenWithinDAPI
+    Child objects:TUJWithinDAPI
+    Calculate child-parent distances?:None
+    Calculate per-parent means for all child measurements?:Yes
+    Calculate distances to other parents?:No
+    Do you want to save the children with parents as a new object set?:Yes
+    Name the output object:GreenTUJColocal
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+    Parent name:None
+
+ClassifyObjects:[module_num:24|svn_version:'Unknown'|variable_revision_number:2|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Make each classification decision on how many measurements?:Single measurement
+    Hidden:1
+    Select the object to be classified:Nuclei
+    Select the measurement to classify by:Children_RNA_Red_Count
+    Select bin spacing:Custom-defined bins
+    Number of bins:2
+    Lower threshold:0.5
+    Use a bin for objects below the threshold?:Yes
+    Upper threshold:1.0
+    Use a bin for objects above the threshold?:Yes
+    Enter the custom thresholds separating the values between bins:0.5
+    Give each bin a name?:Yes
+    Enter the bin names separated by commas:not_colocalized, colocalized
+    Retain an image of the classified objects?:Yes
+    Name the output image:RedDapiColocal
+    Select the object name:RNA_Red
+    Select the first measurement:Children
+    Method to select the cutoff:Mean
+    Enter the cutoff value:0.5
+    Select the second measurement:None
+    Method to select the cutoff:Mean
+    Enter the cutoff value:0.5
+    Use custom names for the bins?:No
+    Enter the low-low bin name:low_low
+    Enter the low-high bin name:low_high
+    Enter the high-low bin name:high_low
+    Enter the high-high bin name:high_high
+    Retain an image of the classified objects?:No
+    Enter the image name:None
+
+ClassifyObjects:[module_num:25|svn_version:'Unknown'|variable_revision_number:2|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Make each classification decision on how many measurements?:Single measurement
+    Hidden:1
+    Select the object to be classified:Nuclei
+    Select the measurement to classify by:Children_RNA_Green_Count
+    Select bin spacing:Custom-defined bins
+    Number of bins:2
+    Lower threshold:0.5
+    Use a bin for objects below the threshold?:Yes
+    Upper threshold:1.0
+    Use a bin for objects above the threshold?:Yes
+    Enter the custom thresholds separating the values between bins:0.5
+    Give each bin a name?:Yes
+    Enter the bin names separated by commas:not_colocalized, colocalized
+    Retain an image of the classified objects?:Yes
+    Name the output image:GreenDapiColocal
+    Select the object name:RNA_Red
+    Select the first measurement:Children
+    Method to select the cutoff:Mean
+    Enter the cutoff value:0.5
+    Select the second measurement:None
+    Method to select the cutoff:Mean
+    Enter the cutoff value:0.5
+    Use custom names for the bins?:No
+    Enter the low-low bin name:low_low
+    Enter the low-high bin name:low_high
+    Enter the high-low bin name:high_low
+    Enter the high-high bin name:high_high
+    Retain an image of the classified objects?:No
+    Enter the image name:None
+
+ClassifyObjects:[module_num:26|svn_version:'Unknown'|variable_revision_number:2|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Make each classification decision on how many measurements?:Single measurement
+    Hidden:1
+    Select the object to be classified:RedWithinDAPI
+    Select the measurement to classify by:Children_GreenWithinDAPI_Count
+    Select bin spacing:Custom-defined bins
+    Number of bins:1
+    Lower threshold:0.0
+    Use a bin for objects below the threshold?:Yes
+    Upper threshold:1.0
+    Use a bin for objects above the threshold?:Yes
+    Enter the custom thresholds separating the values between bins:0.5
+    Give each bin a name?:Yes
+    Enter the bin names separated by commas:not_colocalized, colocalized
+    Retain an image of the classified objects?:Yes
+    Name the output image:RedGreenColocal
+    Select the object name:RNA_Red
+    Select the first measurement:Children
+    Method to select the cutoff:Mean
+    Enter the cutoff value:0.5
+    Select the second measurement:None
+    Method to select the cutoff:Mean
+    Enter the cutoff value:0.5
+    Use custom names for the bins?:No
+    Enter the low-low bin name:low_low
+    Enter the low-high bin name:low_high
+    Enter the high-low bin name:high_low
+    Enter the high-high bin name:high_high
+    Retain an image of the classified objects?:No
+    Enter the image name:None
+
+ClassifyObjects:[module_num:27|svn_version:'Unknown'|variable_revision_number:2|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Make each classification decision on how many measurements?:Single measurement
+    Hidden:1
+    Select the object to be classified:RedWithinDAPI
+    Select the measurement to classify by:Children_TUJWithinDAPI_Count
+    Select bin spacing:Custom-defined bins
+    Number of bins:1
+    Lower threshold:0.0
+    Use a bin for objects below the threshold?:Yes
+    Upper threshold:1.0
+    Use a bin for objects above the threshold?:Yes
+    Enter the custom thresholds separating the values between bins:0.5
+    Give each bin a name?:Yes
+    Enter the bin names separated by commas:not_colocalized, colocalized
+    Retain an image of the classified objects?:Yes
+    Name the output image:RedTUJColocal
+    Select the object name:RNA_Red
+    Select the first measurement:Children
+    Method to select the cutoff:Mean
+    Enter the cutoff value:0.5
+    Select the second measurement:None
+    Method to select the cutoff:Mean
+    Enter the cutoff value:0.5
+    Use custom names for the bins?:No
+    Enter the low-low bin name:low_low
+    Enter the low-high bin name:low_high
+    Enter the high-low bin name:high_low
+    Enter the high-high bin name:high_high
+    Retain an image of the classified objects?:No
+    Enter the image name:None
+
+ClassifyObjects:[module_num:28|svn_version:'Unknown'|variable_revision_number:2|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Make each classification decision on how many measurements?:Single measurement
+    Hidden:1
+    Select the object to be classified:GreenWithinDAPI
+    Select the measurement to classify by:Children_TUJWithinDAPI_Count
+    Select bin spacing:Custom-defined bins
+    Number of bins:1
+    Lower threshold:0.0
+    Use a bin for objects below the threshold?:Yes
+    Upper threshold:1.0
+    Use a bin for objects above the threshold?:Yes
+    Enter the custom thresholds separating the values between bins:0.5
+    Give each bin a name?:Yes
+    Enter the bin names separated by commas:not_colocalized, colocalized
+    Retain an image of the classified objects?:Yes
+    Name the output image:GreenTUJColocal
+    Select the object name:RNA_Red
+    Select the first measurement:Children
+    Method to select the cutoff:Mean
+    Enter the cutoff value:0.5
+    Select the second measurement:None
+    Method to select the cutoff:Mean
+    Enter the cutoff value:0.5
+    Use custom names for the bins?:No
+    Enter the low-low bin name:low_low
+    Enter the low-high bin name:low_high
+    Enter the high-low bin name:high_low
+    Enter the high-high bin name:high_high
+    Retain an image of the classified objects?:No
+    Enter the image name:None
+
+FilterObjects:[module_num:29|svn_version:'Unknown'|variable_revision_number:8|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:False|wants_pause:False]
+    Select the objects to filter:RedWithinDAPI
+    Name the output objects:FilterObjects
+    Select the filtering mode:Measurements
+    Select the filtering method:Limits
+    Select the objects that contain the filtered objects:None
+    Select the location of the rules or classifier file:Elsewhere...|
+    Rules or classifier file name:rules.txt
+    Class number:1
+    Measurement count:1
+    Additional object count:0
+    Assign overlapping child to:Both parents
+    Select the measurement to filter by:Children_GreenWithinDAPI_Count
+    Filter using a minimum measurement value?:Yes
+    Minimum value:0.5
+    Filter using a maximum measurement value?:No
+    Maximum value:1.0
+
+MaskObjects:[module_num:30|svn_version:'Unknown'|variable_revision_number:3|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:False|wants_pause:False]
+    Select objects to be masked:RNA_Red
+    Name the masked objects:MaskedNuclei
+    Mask using a region defined by other objects or by binary image?:Objects
+    Select the masking object:Nuclei
+    Select the masking image:None
+    Handling of objects that are partially masked:Keep overlapping region
+    Fraction of object that must overlap:0.5
+    Numbering of resulting objects:Renumber
+    Invert the mask?:No
+
+SaveImages:[module_num:31|svn_version:'Unknown'|variable_revision_number:15|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:False|wants_pause:False]
+    Select the type of image to save:Image
+    Select the image to save:RedGreenColocal
+    Select method for constructing file names:From image filename
+    Select image name for file prefix:None
+    Enter single file name:OrigBlue
+    Number of digits:4
+    Append a suffix to the image file name?:No
+    Text to append to the image name:
+    Saved file format:jpeg
+    Output file location:Default Output Folder|
+    Image bit depth:8-bit integer
+    Overwrite existing files without warning?:No
+    When to save:Last cycle
+    Record the file and path information to the saved image?:No
+    Create subfolders in the output folder?:No
+    Base image folder:Elsewhere...|
+    How to save the series:T (Time)
+
+ExportToSpreadsheet:[module_num:32|svn_version:'Unknown'|variable_revision_number:13|show_window:True|notes:[]|batch_state:array([], dtype=uint8)|enabled:True|wants_pause:False]
+    Select the column delimiter:Comma ("","")
+    Add image metadata columns to your object data file?:No
+    Add image file and folder names to your object data file?:No
+    Select the measurements to export:No
+    Calculate the per-image mean values for object measurements?:No
+    Calculate the per-image median values for object measurements?:No
+    Calculate the per-image standard deviation values for object measurements?:No
+    Output file location:Default Output Folder|
+    Create a GenePattern GCT file?:No
+    Select source of sample row name:Metadata
+    Select the image to use as the identifier:None
+    Select the metadata to use as the identifier:None
+    Export all measurement types?:Yes
+    Press button to select measurements:
+    Representation of Nan/Inf:NaN
+    Add a prefix to file names?:Yes
+    Filename prefix:RNAscope
+    Overwrite existing files without warning?:No
+    Data to export:Do not use
+    Combine these object measurements with those of the previous object?:No
+    File name:DATA.csv
+    Use the object name for the file name?:Yes
+"
+Run_Timestamp,2021-06-11T16:58:56.731968
